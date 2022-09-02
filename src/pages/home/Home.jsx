@@ -1,9 +1,9 @@
-import Chart from "../../chart/Chart";
-import FeaturedInfo from "../../featuredInfo/FeaturedInfo";
+import Chart from "../../components/chart/Chart";
+import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
 import "./home.css";
 import { userData } from "../../dummyData";
-import WidgetLg from "../../components/widgetLg/WidgetLg";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
+import WidgetLg from "../../components/widgetLg/WidgetLg";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
         data={userData}
         title="User Analytics"
         grid
-        dataKey="Active user"
+        dataKey="Active User"
       />
       <div className="homeWidgets">
         <WidgetSm />
